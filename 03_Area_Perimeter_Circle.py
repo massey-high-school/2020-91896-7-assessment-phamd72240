@@ -27,11 +27,6 @@ def num_check(question, type):
 
 # Asks for Radius and diameter
 radius = num_check("Radius: ", int)
-diameter = num_check("Diameter: ", int)
-radius = diameter / 2
-diameter = radius * 2
-
-
 # Find area
 area = radius * radius * math.pi
 print("Area:", area)
