@@ -1,4 +1,3 @@
-# String Checking Function
 def string_checker(question, to_check):
     valid = False
     while not valid:
@@ -13,8 +12,16 @@ def string_checker(question, to_check):
 
         print("sorry that is not a valid response")
 
-# Asks user for prefered shape
-prefered_shape = ["rectangle","triangle","circle","square"]
-shape = string_checker("What shape do you want? ", prefered_shape)
-print(shape)
+
+# *** Main Routine starts here ***
+
+yes_no = ["yes", "no"]
+rps = ["rock", "paper", "scissors"]
+
+mood = string_checker("Are you happy? ", yes_no)
+print(mood)
+
+choose = string_checker("Choose: ", rps)
+print(choose)
+
 

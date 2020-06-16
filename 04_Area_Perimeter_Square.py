@@ -20,13 +20,12 @@ def num_check(question, type):
 
 # Main Function goes here...
 
-# Asks for height and width
-length = num_check("Length: ", float)
-width = num_check("Width: ", float)
+# Asks for side
+side = num_check("Side: ", float)
 # Find area
-area = length * width
+area = side * side
 print("Area:", area)
 # Find perimeter
-perimeter = (length + width) * 2
+perimeter = side * 4
 print("Perimeter: ", perimeter)
 

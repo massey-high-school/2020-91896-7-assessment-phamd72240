@@ -2,11 +2,8 @@
 import math
 # Number Checking Function
 def num_check(question, type):
-    if type == int:
-        err_type = "an integer"
-    else:
+    if type == float:
         err_type = "a number"
-
     error = "Please enter {} that is more than zero".format(err_type)
 
     valid = False
@@ -26,7 +23,7 @@ def num_check(question, type):
 # Main Function goes here...
 
 # Asks for Radius and diameter
-radius = num_check("Radius: ", int)
+radius = num_check("Radius: ", float)
 # Find area
 area = radius * radius * math.pi
 print("Area:", area)

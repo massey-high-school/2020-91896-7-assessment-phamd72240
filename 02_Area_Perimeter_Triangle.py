@@ -1,10 +1,7 @@
 # Number Checking Function
 def num_check(question, type):
-    if type == int:
-        err_type = "an integer"
-    else:
+    if type == float:
         err_type = "a number"
-
     error = "Please enter {} that is more than zero".format(err_type)
 
     valid = False
@@ -24,15 +21,15 @@ def num_check(question, type):
 # Main Function goes here...
 
 # Asks for height and base
-base = num_check("Base: ", int)
-height = num_check("Height: ", int)
+base = num_check("Base: ", float)
+height = num_check("Height: ", float)
 # Asks for area
 area = base * height
 print("Area: ", area)
 # Asks for 3 sides
-side_one = num_check("Side: ", int)
-side_two = num_check("Side: ", int)
-side_three = num_check("Side: ", int)
+side_one = num_check("Side: ", float)
+side_two = num_check("Side: ", float)
+side_three = num_check("Side: ", float)
 # Asks for perimeter
 perimeter = side_one + side_two + side_three
 print("Perimeter: ", perimeter)

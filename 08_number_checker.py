@@ -1,5 +1,6 @@
 # Number Checking Function
 def num_check(question, type):
+
     if type == float:
         err_type = "a number"
     error = "Please enter {} that is more than zero".format(err_type)
@@ -18,15 +19,5 @@ def num_check(question, type):
         except ValueError:
             print(error)
 
-# Main Function goes here...
-
-# Asks for height and width
-length = num_check("Length: ", float)
-width = num_check("Width: ", float)
-# Find area
-area = length * width
-print("Area:", area)
-# Find perimeter
-perimeter = (length + width) * 2
-print("Perimeter: ", perimeter)
-
+how_many = num_check("How many items are you going to make / sell ? ", float)
+print(how_many)

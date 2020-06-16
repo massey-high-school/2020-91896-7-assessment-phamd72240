@@ -1,11 +1,7 @@
 # Number Checking Function
 def num_check(question, type):
-
-    if type == int:
-        err_type = "an integer"
-    else:
+    if type == float:
         err_type = "a number"
-
     error = "Please enter {} that is more than zero".format(err_type)
 
     valid = False
@@ -22,5 +18,16 @@ def num_check(question, type):
         except ValueError:
             print(error)
 
-how_many = num_check("How many items are you going to make / sell ? ", int)
-print(how_many)
+# Main Function goes here...
+
+# Asks for height and width
+base = num_check("Base: ", float)
+height = num_check("Height: ", float)
+length = num_check("Length: ", float)
+width = num_check("Width: ", float)
+# Find area
+area = base * height
+print("Area:", area)
+# Find perimeter
+perimeter = (length + width) * 2
+print("Perimeter: ", perimeter)
