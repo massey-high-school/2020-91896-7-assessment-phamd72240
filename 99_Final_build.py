@@ -33,7 +33,8 @@ def string_checker(question, to_check):
             elif response == item[0]:
                 return item
 
-        print("sorry that is not a valid response")
+        print("sorry that is not a valid response. Please choose"
+              " triangle, square, circle, rectangle or parallelogram.")
 
 # Asks user for prefered shape
 prefered_shape = ["rectangle","triangle","circle","square","parallelogram"]
