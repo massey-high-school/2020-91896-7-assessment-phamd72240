@@ -23,11 +23,10 @@ def num_check(question, type):
 # Asks for height and width
 base = num_check("Base: ", float)
 height = num_check("Height: ", float)
-length = num_check("Length: ", float)
-width = num_check("Width: ", float)
+side = num_check("Side: ", float)
 # Find area
 area = base * height
 print("Area:", area)
 # Find perimeter
-perimeter = (length + width) * 2
+perimeter = (side + base) * 2
 print("Perimeter: ", perimeter)

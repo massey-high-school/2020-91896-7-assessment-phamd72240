@@ -38,7 +38,7 @@ def string_checker(question, to_check):
 
 # Asks user for prefered shape
 prefered_shape = ["rectangle","triangle","circle","square","parallelogram"]
-shape = string_checker("What shape do you want? ", prefered_shape)
+shape = string_checker("Please choose between: rectangle, triangle, circle, square, parallelogram.", prefered_shape)
 print(shape)
 
 # Main Routine goes here...
@@ -58,7 +58,7 @@ if shape == "triangle":
     base = num_check("Base: ", float)
     height = num_check("Height: ", float)
     # Asks for area
-    area = base * height
+    area = (base * height) / 2
     print("Area: ", area)
     # Asks for 3 sides
     side_one = num_check("Side: ", float)
