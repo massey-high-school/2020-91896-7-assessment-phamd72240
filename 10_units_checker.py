@@ -1,10 +1,21 @@
-units = input("What is your prefered unit? ")
+def string_checker(question, to_check):
+    valid = False
+    while not valid:
 
-if units == "m" or "meter":
-    print("You have chosen meter as your unit.")
+        response = input(question).lower()
 
-if units == "cm" or "centimeter":
-    print("You have chosen centimeter as your unit.")
+        for item in to_check:
+            if response == item:
+                return response
+            elif response == item[0]:
+                return item
 
-if units == "mm" or "millimeter":
-    print("You have chosen millimeter as your unit.")
+        print("sorry that is not a valid response. Please units between cm, mm or m")
+
+
+# Asks user for prefered units
+prefered_units = ["cm","m","mm"]
+units = string_checker("Please units your units: cm, mm or m", prefered_units)
+print(units)
+
+
